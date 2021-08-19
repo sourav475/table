@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tables from './components/tables'
 
-function App() {
+const App= () =>{
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3 style={{textAlign: 'center', backgroundColor: 'blue', marginBottom: '20px', marginLeft: '300px' ,padding: '20px', width: '50%', float: 'center', borderRadius: '20px'}}>Table</h3>
+      <Tables />
     </div>
   );
 }
